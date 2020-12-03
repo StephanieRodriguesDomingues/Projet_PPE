@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>INSCRIPTION</title>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	</head>
+	<body>
+		<h1><img src="logo.jpg" width="100" height="60" class="main-title" />Gestion des visites</h1>
+		<form name="formINSCRIPTION" method="POST" action="recupINSCRIPTION.php">
+			<h1>Inscription</h1>
+			<label class="titre">Matricule : </label><input type="text" name="mat">
+			<br>
+			<label class="titre">Nom : </label><input type="text" name="nom" maxlength="100">
+			<br>
+			<label class="titre">Prenom : </label><input type="text" name="prenom" maxlength="100">
+			<br>
+			<label class="titre">Adresse : </label><input type="text" name="adresse" size="50">
+			<br>
+			<label class="titre">Code postal : </label><input type="number" name="cpostal" size="5"	maxlength="5">
+			<br>
+			<label class="titre">Ville : </label><input type="text" name="ville">
+			<br>
+			<label class="titre">Date d'embauche : </label><input type="date" name="dateEmb">
+			<br>
+			<label class="titre" for="codesec">Secteur : </label>
+			<select id="codesec">
+				<option>Sélectionnez votre secteur...</option>
+				<option value="E">Est</option>
+				<option value="N">Nord</option>
+				<option value="O">Ouest</option>
+				<option value="P">Paris-Centre</option>
+				<option value="S">Sud</option>
+			</select>
+			<br>
+			<label class="titre" for="labcode">Laboratoire : </label>
+			<select id="labcode">
+				<option>Sélectionnez votre laboratoire...</option>
+				<option value="BC">Bichat</option>
+				<option value="GY">Gyverny</option>
+				<option value="SW">Swiss Kane</option>
+			</select>
+			<br>
+			<label class="titre">Département : </label><input type="number" name="depcode" size="3" maxlength="3">
+			<br>
+			<label class="titre">Mot de passe : </label><input type="password" name="mdp">
+			<br>
+			<label class="titre">Confirmer mot de passe : </label><input type="password" name="cf_mdp">
+			<br>
+			<button name="register" />S'inscrire</button>
+		</form>
+		<h4><a href="./formAUTHENTIFICATION.html">Déjà inscrit ? Cliquez ici pour vous connecter.</a></h4>
+	</body>
+</html>
